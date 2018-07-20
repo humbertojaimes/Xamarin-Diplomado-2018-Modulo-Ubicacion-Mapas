@@ -556,7 +556,7 @@ mapStore.Pins.Add(new ColorPin()
 ```
 Hecho el cambio el resultado debe ser el siguiente
 
-![](Screenshots/Screen5.png) 
+![](ScreenShots/Screen5.png) 
 
 **Nota: El color negro (Color.Black) no funciona en Android y el marcador se muestra rojo.**
 
