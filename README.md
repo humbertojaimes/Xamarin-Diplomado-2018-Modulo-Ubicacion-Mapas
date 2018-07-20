@@ -191,7 +191,7 @@ public App()
 ```
 Si todo va de acuerdo al manual este debe ser el resultado al iniciar la app, como no hemos creado la página StoreMapPage esta línea dará un error “await Navigation.PushAsync(new Views.StoreMapPage());”, para probar se puede comentar de forma temporal. 
 
-![](Screenshots/Screen1.png)
+![](ScreenShots/Screen1.png)
 
 5.	Dentro de la carpeta Views crea una nueva página XAML llamada StoreMapPage, este es el contenido.
 
@@ -303,15 +303,15 @@ public StoreMapPage()
 ```
 Al ejecutar el resultado de esta segunda página debe verse parecido al siguiente.
 
-![](Screenshots/Screen2.png)
+![](ScreenShots/Screen2.png)
 
 Cuando se hace uso del Emulador de Android debemos definir las coordenadas ficticias que se utilizaran durante las pruebas y se debe presionar el botón “SEND” 
 
-![](Screenshots/Screen3.png)
+![](ScreenShots/Screen3.png)
 
 En el caso de utilizar el simulador de iOS las coordenadas se definen desde el menú “Debug” en la opción “Location”, ahí podemos poner alguna de las opciones predefinidas o elegir la opción “Custom Location” para poner las que deseemos.
  
- ![](Screenshots/Screen4.png)
+ ![](ScreenShots/Screen4.png)
  
  ### Extendiendo el mapa
 
