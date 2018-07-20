@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="UbicacionMapas.Views.StoresPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Mapa" Clicked="tbMap_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+         <ListView x:Name="lvStores" RowHeight="100" SelectionMode="None" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                       
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="80" />
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding Photo}"  HorizontalOptions="Center" HeightRequest="90" WidthRequest="50" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+                            <Label FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="1" Text="{Binding Name}" Grid.Row="0" />
+                            <Label FontSize="Small" VerticalOptions="Start" Grid.Column="1" Text="{Binding Address}" Grid.Row="1" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content> 
+
+</ContentPage>
