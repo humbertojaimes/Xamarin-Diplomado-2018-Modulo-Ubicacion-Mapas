@@ -63,7 +63,7 @@ Y en el archivo Info.plist hay que agregar el permiso de ubicación, el texto pu
 
         public string Address
         {
-            get;s
+            get;
             set;
         }
 
